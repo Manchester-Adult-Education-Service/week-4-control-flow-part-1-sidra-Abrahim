@@ -199,7 +199,24 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+year = int(input("Please Enter a year: "))
 
+#div_by_four = year % 4
+#is_leap_four = div_by_four == 0
+
+#div_by_hundred = year % 100
+#is_leap_hund = div_by_hundred != 0
+
+#div_by_fourHund = year % 400
+#is_leap_fHund = div_by_fourHund == 0
+
+#is_leap_year = is_leap_four and (is_leap_hund or is_leap_fHund) 
+
+#is_leap_year = (div_by_four == 0) and ((div_by_hundred !=0) or (div_by_fourHund == 0))
+
+is_leap_year = ( year % 4 == 0 ) and (( year % 100 != 0) or ( year % 400 == 0))
+
+print(f"{year} is a leap year: {is_leap_year}")
 # -------------------------------------------
 # SAVING YOUR WORK
 # -------------------------------------------
